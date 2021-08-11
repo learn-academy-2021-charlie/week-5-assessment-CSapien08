@@ -104,11 +104,7 @@ describe("findWord", () => {
 //END
 
 const findWord = (words) => {  
-    return words.filter(value => {
-        if(value.toLowerCase().includes('a')){
-            return value
-        }
-    })
+    return words.filter(value => value.toLowerCase().includes('a'))
 }
 
 // --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a “full house”. A full house is exactly one pair and one three of a kind.
@@ -135,13 +131,6 @@ describe("isFullHouse", () => {
         expect(isFullHouse(hand3)).toEqual(false)
     })
 })
-
-var hand1 = [5, 5, 5, 3, 3]
-// Expected output: true
-var hand2 = [5, 5, 3, 3, 4]
-// Expected output: false
-var hand3 = [5, 5, 5, 5, 4]
-// Expected output: false
 
 // b) Create the function that makes the test pass.
 
